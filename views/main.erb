@@ -1,15 +1,13 @@
-<!-- views/index.erb -->
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Sinatra API Call</title>
-</head>
-<body>
+<div>
   <h1>Intrusive thoughts: Starring ✨Kanye West✨</h1>
-  <p>
-   <% @api_data.each do |item| %>
+</div>
+<div class="typewriter">
+  <h3>
+    <% @api_data.each do |item| %>
       <em><%= item.second %></em>
     <% end %>
-  </p>
-</body>
-</html>
+  </h3>
+</div>
+<div class="img">
+  <img src="https://freepngimg.com/save/156153-kanye-rapper-west-free-clipart-hd/512x512">
+</div>
