@@ -7,7 +7,7 @@ body {
 }
 
 h1 {
-  color: blue;
+  color: black;
   font-family: 'Young Serif', serif;
 }
 
@@ -16,7 +16,7 @@ h1 {
   font-family: monospace;
   overflow: hidden;
   border-right: .15em solid red;
-  white-space: wrap; 
+  white-space: nowrap; 
   margin: 0 auto; 
   letter-spacing: .15em; 
   animation: 
@@ -41,6 +41,7 @@ div {
 }
 
 .img {
-  display: flex;
-  justify-content: flex-end;
+  position: fixed;
+  bottom: 0;
+  right: 0;
 }
