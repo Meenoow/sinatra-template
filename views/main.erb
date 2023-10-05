@@ -7,17 +7,13 @@
 
 <div class="container">
   <div>
-    <h1>Hey Kanye,</h1>
-    <br>
-    <h2>Give me some wisdom</h2>
+    <h1>Hey Kanye,<br> Give me some wisdom</h1>
   </div>
 
-  <div class="d-flex flex-wrap typewriter">
-    <h3>
-      <% @api_data.each do |item| %>
-        <em><%= item.second %></em>
-      <% end %>
-    </h3>
+  <div class="d-flex flex-wrap overflow-auto">
+    <div class="typewriter my-5">
+      <h3><%= @quote %></h3>
+    </div>
   </div>
 
   <img src="https://freepngimg.com/save/156153-kanye-rapper-west-free-clipart-hd/512x512" width="100">

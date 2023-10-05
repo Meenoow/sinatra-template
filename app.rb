@@ -9,8 +9,7 @@ require_relative 'constants'
 
 get("/") do
   response = HTTP.get('https://api.kanye.rest/')
- 
-  @api_data = JSON.parse(response.body)
+  @quote = JSON.parse(response.body).fetch("quote")
 
   erb(:main)
 end
