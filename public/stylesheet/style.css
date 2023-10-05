@@ -1,24 +1,13 @@
-body {
-  margin: 30px auto;
-  padding: 40px;
-  text-align: center;
-  display: absolute;
-  justify-items: center;
-}
-
-h1 {
-  color: black;
-  font-family: 'Young Serif', serif;
-}
-
-.typewriter h3 {
-  color: black;
+.typewriter {
+  color: blue;
   font-family: monospace;
-  overflow: hidden;
   border-right: .15em solid red;
-  white-space: nowrap; 
+  /*white-space: wrap;*/ 
+  /*overflow-y: hidden;*/
+  overflow-wrap: break-word;
   margin: 0 auto; 
   letter-spacing: .15em; 
+  max-width: 100%; 
   animation: 
     typing 3.5s steps(30, end),
     blink-caret .5s step-end infinite;
@@ -31,17 +20,5 @@ h1 {
 
 @keyframes blink-caret {
   from, to { border-color: transparent }
-  50% { border-color: red }
-}
-
-div {
-  display: flex;
-  justify-content: center;
-  margin: 30px;
-}
-
-.img {
-  position: fixed;
-  bottom: 0;
-  right: 0;
+  20% { border-color: blue }
 }

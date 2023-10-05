@@ -3,6 +3,7 @@ require "sinatra/reloader"
 require "sinatra/activerecord"
 require "http"
 require 'open-uri'
+require_relative 'constants'
 
 
 
